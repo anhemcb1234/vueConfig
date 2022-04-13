@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "prod": "copy env.production .env && vue-cli-service serve",
+    "sta": "copy env.stage .env && vue-cli-service serve",
+    "dev": "copy env.development .env && vue-cli-service serve",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
