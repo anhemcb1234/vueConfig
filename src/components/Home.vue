@@ -10,7 +10,11 @@ export default {
   data(){
     return {
       message:'home ',
+
     }
+  },
+  mounted() {
+    console.log('mounted')
   },
 }
 </script>

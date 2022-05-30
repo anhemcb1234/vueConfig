@@ -1,7 +1,7 @@
 import {Axios} from './Axios';
 
-function getArticles(payload,pageId) {
-   return Axios.get(`?q=${payload}&pageSize=10&page=${pageId}&from=2022-03-13&sortBy=publishedAt&apiKey=9f395695403c4ad08ded1cfaeec0aaab`);
+function getArticles(payload) {
+   return Axios.get(`?q=${payload}&from=2022-04-29&sortBy=publishedAt&apiKey=1f5210480a3d48d487a6e90bd780eadc`);
 }
 export const homeServices = {
 getArticles

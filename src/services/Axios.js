@@ -30,16 +30,16 @@ function getInstance() {
         return config;
     })
 
-    axiosInstance.interceptors.response.use(response => {
-        return response;
-    }, error => {
-        if (error.response.status === 401) {
-            localStorage.removeItem('token');
-            alert('Bạn phải đăng nhập để truy cập vào api này');
-            window.location.href = '/login';
-        }
-        return Promise.reject(error);
-    })
+    // axiosInstance.interceptors.response.use(response => {
+    //     return response;
+    // }, error => {
+    //     if (error.response.status === 401) {
+    //         localStorage.removeItem('token');
+    //         alert('Bạn phải đăng nhập để truy cập vào api này');
+    //         window.location.href = '/login';
+    //     }
+    //     return Promise.reject(error);
+    // })
     return axiosInstance;
 }
 
